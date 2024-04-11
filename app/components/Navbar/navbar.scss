@@ -1,0 +1,60 @@
+@import "./../../styles/base/vars.scss";
+
+.admin-navigation {
+    position: relative;
+    z-index: 2;
+    padding: 18px;
+    background-color: $main-color;
+    
+    color: $white;
+}
+
+.user-navigation {
+    width: 100%;
+    padding: 18px;
+    background-color: $main-color;
+    color: $white;
+}
+
+.user-navigation__list-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+        font-size: 25px;
+    }
+}
+
+.nav__list-wrapper {
+    width: 100%;
+
+    .nav__list-btn {
+        position: relative;
+        font-size: 18px;
+    }
+}
+
+.nav__list-item {
+    width: 200%;
+    height: 75px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 45px;
+    left: -55%;
+
+    font-size: 17px;
+    background-color: $main-color;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.nav__list-items {
+    font-size: 19px;   
+}

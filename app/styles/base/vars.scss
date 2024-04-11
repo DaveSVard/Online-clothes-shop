@@ -1,0 +1,68 @@
+// colors 
+
+
+// $main-color: rgb(200, 125, 76);
+// $lite-mainColor: rgb(214, 129, 72);
+$lite-mainColor: #966136;
+$main-color: #aa6e3d;
+$success-color: #5CB85C;
+$error-color: #ED4337;
+$delete-color: #ED4337;
+$animation-color: #865f0b;
+$gray-border: rgba(128, 128, 128, 0.568);
+$white: #fff;
+
+// medias
+
+$media1270: 1270px;
+$media850: 850px;
+$media650: 650px;
+$media550: 550px;
+$media450: 450px;
+$media434: 434px;
+$media400: 400px;
+
+//mixins
+
+@mixin media1270Mixin {
+    @media screen and (max-width: $media1270) {
+        @content;
+    }
+}
+
+@mixin media850Mixin {
+    @media screen and (max-width: $media850) {
+        @content;
+    }
+}
+
+@mixin media650Mixin {
+    @media screen and (max-width: $media650) {
+        @content;
+    }
+}
+
+@mixin media550Mixin {
+    @media screen and (max-width: $media550) {
+        @content;
+    }
+}
+
+@mixin media450Mixin {
+    @media screen and (max-width: $media450) {
+        @content;
+    }
+}
+
+@mixin media434Mixin {
+    @media screen and (max-width: $media434) {
+        @content;
+    }
+}
+
+@mixin media400Mixin {
+    @media screen and (max-width: $media400) {
+        @content;
+    }
+}
+

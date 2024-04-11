@@ -1,0 +1,64 @@
+@import "./../../styles/base/vars.scss";
+
+.footer {
+    border-top: 1px solid wheat;
+    width: 100%;
+    min-height: 300px;
+    background-color: #945f33;
+} 
+
+.footer__wrapper {
+    padding: 35px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    align-content: start;
+    align-items: start;
+    justify-items: start;
+    gap: 15px;
+
+    & h2 {
+        font-weight: 700;
+        font-size: 25px;
+    }
+
+    .footer__leftSide {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        row-gap: 15px;
+
+        .footer__soc {
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            column-gap: 7px;
+
+            & img {
+                fill: black;
+            }
+        }
+    }
+
+    .footer__info {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        row-gap: 5px;
+    
+        & a {
+            color: black;
+            transition: 0.2s;
+            font-size: 17px;
+            font-weight: 500;
+        }
+    
+        & a:hover {
+            text-decoration: underline;
+            color: $white;
+        }
+    }
+}
+

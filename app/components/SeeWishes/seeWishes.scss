@@ -1,0 +1,23 @@
+@import "./../../styles/base/vars.scss";
+
+.wishes {
+    background-image: url("./../../../public/images/bbb.jpg");
+    width: 100%;
+    min-height: 100vh;
+}
+
+.wishes__wrapper {
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 25px;
+}
+
+.wishes__products {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 7px;
+}

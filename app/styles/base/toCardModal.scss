@@ -1,0 +1,55 @@
+@import "./vars.scss";
+
+.toCart__modal {
+    width: 250px;
+
+    & form {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 7px;
+
+        .priceAndCount {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 15px;
+    
+            & p {
+                padding: 5px;
+                border: 1px solid $gray-border;
+                border-radius: 5px;
+            }
+        }
+    
+        & select {
+            width: 100%;
+            padding: 7px;
+            border: 1px solid $gray-border;
+            border-radius: 5px;
+        }
+    
+        .toCart__btns {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 15px;
+    
+            & button {
+                width: 100%;
+                height: 35px;
+                background-color: $lite-mainColor;
+                border-radius: 5px;
+                color: white;
+            }
+        }
+    
+        & .success-btn {
+            width: 100%;
+        }
+    }
+
+}

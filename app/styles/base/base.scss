@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import "./vars.scss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    max-width: 1310px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.successMessage {
+    color: $success-color;
+    font-size: 16px;
+}
+
+.failMessage {  
+    color: red;
+    font-size: 16px;
+}
+
+.error {
+    text-align: center;
+    color: red;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.success-btn {
+    padding: 7px;
+
+    border-radius: 5px;
+    background-color: $main-color;
+    color:$white;
+}
+
+.auth-btn {
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    
+    background-color: $main-color;
+    color: $white;
+    font-weight: 600;
+}
+
+.success-btn2 {
+    padding: 5px 12px;
+    border-radius: 5px;
+    background-color: green;
+    color: $white;
+}
+
+.delete-btn {
+    padding: 5px 12px;
+    border-radius: 7px;
+    background-color: $delete-color;
+    color: white;
+}
+
+.accent {
+    color: black;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.delete-color {
+    color: $delete-color;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.blue-hover {
+    transition: 0.3s;
+    &:hover {
+        color: #0077b6;
+    }
+}
+
+.red-hover {
+    transition: 0.3s;
+    &:hover {
+        color: red;
+    }
+}
+.green-hover {
+    transition: 0.3s;
+    &:hover {
+        color: green;
+    }
+}
+
+.black-hover {
+    transition: 0.3s;
+    &:hover {
+        color: black;
+    }
+}
+
+.pagintaionActive {
+    background-color: $main-color !important;
+}
+
+.white {
+    color: $white;
+}
+
+.lite-filterForm {
+
+    & input, & select {
+        border: 1px solid $white !important;
+        color: $white !important;
+    }
+
+    & input::placeholder {
+        color: $white !important;
+    }
+
+    & option {
+        color: black !important;
+    }
+}

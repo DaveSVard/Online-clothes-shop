@@ -1,0 +1,32 @@
+@import './vars.scss';
+
+.message {
+    background-image: url("./../../../public/images/bbb.jpg");
+    width: 100%;
+    min-height: 100vh;
+}
+
+.message__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.message__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3px;
+
+    & a {
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    @include media450Mixin {
+        flex-direction: column;
+    }
+}

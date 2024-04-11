@@ -1,0 +1,68 @@
+@import "./../../styles/base/vars.scss";
+
+.filter {
+
+}
+
+.filter__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+}
+
+.filter__top {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 7px;
+
+    padding: 5px;
+    background-color: $main-color;
+    color: $white;
+}
+
+.filter__tools {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+
+    & input , & select {
+        width: 100%;
+        padding: 7px;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 5px;
+        resize: none;
+
+        &::placeholder {
+            text-align: center;
+            font-size: 15px;
+            color: black;
+        }
+
+        @include media450Mixin {
+            font-size: 14px;
+        }
+    }
+}
+
+.filter__range {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+
+    .filter__range-wrapper {
+        display: flex;
+        column-gap: 5px;
+    }
+
+    & button {
+        width: 100%;
+    }
+
+}

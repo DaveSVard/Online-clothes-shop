@@ -1,0 +1,96 @@
+@import "./../../styles/base/vars.scss";
+
+.modal {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+
+    overflow-y: scroll;
+    z-index: 7;
+}
+
+
+.modal.active {
+    opacity: 1;
+    pointer-events: all;
+} 
+
+
+.modal__content {
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 5px;
+    transform: scale(0.5);
+    transition: 0.4s all;
+
+    overflow-y: auto;
+
+    @include media850Mixin {
+        width: 50vw;
+    }
+
+    @include media650Mixin {
+        width: 70vw;
+    }
+
+    @include media550Mixin {
+        padding: 5px;
+    }
+
+    @include media450Mixin {
+        width: 80vw;
+    }
+
+    .deleteModalMessage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 7px;
+    }
+
+    .deleteBtns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 5px;
+    }
+
+    
+
+    .singleItemInfo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        padding: 15px;
+
+
+        @include media650Mixin {
+
+            & p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.modal__content.active {
+    transform: scale(1);
+}

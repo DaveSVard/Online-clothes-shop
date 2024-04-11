@@ -1,0 +1,89 @@
+@import "./../../styles/base/vars.scss";
+
+.settings {
+    background-image: url("./../../../public/images/bbb.jpg");
+    width: 100%;
+    min-height: 100vh;
+}
+
+.settings__wrapper {
+    padding-top: 35px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    row-gap: 15px;
+    column-gap: 25px;
+
+    @include media1270Mixin {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.settings__info {
+    width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: $main-color;
+    color: $white;
+}
+
+.settings__forms {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+
+    .settings__forms-item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        background-color: $main-color;
+        border-radius: 10px;
+    }
+
+    @include media1270Mixin {
+        width: 100%;
+    }
+}
+
+
+.settings__changeData {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    padding: 15px;
+    
+    
+    .settings__changeData-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 5px;
+
+        & input {
+            width: 100%;
+            padding: 7px;
+            border: 1px solid $white;
+            border-radius: 5px;
+            text-align: center;
+
+            &::placeholder {
+                color: $white;
+            }
+        }
+    }
+
+    @include media450Mixin {
+        width: 280px;
+    }
+}

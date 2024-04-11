@@ -1,0 +1,145 @@
+@import "./../../styles/base/vars.scss";
+
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./../../../public/images/homePage/home-bg2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header__wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(73, 51, 2, 0.295);
+}
+
+.animate {
+    transition: all 750ms ease-in-out;
+}
+  
+#animation {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    
+    backface-visibility: hidden;
+    cursor: pointer;
+
+}
+  
+#animation .sticky {
+    transform: rotate(45deg);
+}
+  
+#animation:hover .sticky {
+    transform: rotate(10deg);
+}
+  
+#animation .sticky {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:180px;
+    height: 180px;
+}
+  
+#animation .reveal .circle{
+    box-shadow: 0 1px 0px rgba(0,0,0,.15);
+    font-family: 'helvetica neue', arial;
+    
+    font-weight: 600;
+    line-height: 140px;
+    text-align: center;
+    color: $white;
+    
+}
+
+#animation .circle_wrapper{
+    position: absolute;
+    width: 180px; 
+    height: 180px;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+}
+  
+#animation .circle{
+    position: absolute;
+    width: 140px; 
+    height:  140px; 
+    margin: 20px;
+    border-radius: 50%;
+}
+  
+#animation .back {
+    height: 10px;
+    top: 30px;
+}
+  
+#animation:hover .back {
+    height: 90px;
+    top: 110px;
+}
+  
+#animation .back .circle {
+    margin-top: -130px;
+    background-color: $main-color; 
+    background-image: -webkit-linear-gradient(bottom, rgba(251,236,63,.0), rgba(255,255,255,.8));
+}
+  
+#animation:hover .back .circle {
+    margin-top: -50px;
+}
+  
+#animation .front {
+    height: 150px;
+    bottom: 0;
+    top: auto;     
+    box-shadow: 0 -140px 20px -140px rgba(0,0,0,.3);
+}
+  
+#animation:hover .front {
+    height: 70px;      
+    box-shadow: 0 -60px 10px -60px rgba(0,0,0,.1);
+}
+  
+#animation .front .circle {
+    margin-top: -10px;
+    background-color: $main-color;
+    background-image: linear-gradient(bottom, rgba(251,236,63,.0) 75%, $animation-color 95%);
+}
+  
+#animation h2 {
+    font-family: 'helvetica neue', arial;
+    font-weight: 600;
+    font-size: 17px;
+    text-align: center;
+    position: absolute;
+    width: 180px;
+    height: 140px;
+    line-height: 140px;
+    color: $white;
+    font-weight: 500;
+      
+    transition: opacity 50ms linear 400ms;
+}
+  
+#animation:hover h2{
+    opacity: 0;      
+    transition: opacity 50ms linear 300ms;
+}
+  
+#animation:hover .front .circle{
+    margin-top: -90px;
+    background-color: #e2d439;
+    background-position: 0 100px;
+}

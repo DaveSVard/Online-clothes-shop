@@ -1,0 +1,236 @@
+@import "./vars.scss";
+
+.formPage {
+    margin-top: 70px;
+}
+
+.formPage__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+
+.formPage__form {
+    width: clamp(290px, 90vw, 400px);
+    display: grid;
+    gap: 5px;
+    
+
+    & input, & textarea, & select {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 5px;
+        resize: none;
+
+        &::placeholder {
+            text-align: center;
+        }
+
+        @include media450Mixin {
+            font-size: 14px;
+        }
+    }
+
+    & button {
+        width: 100%;
+    }
+
+    .my-grid {
+        grid-template-columns: 1fr 1fr 50px;
+
+        @include media450Mixin {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .plus-btn {
+        width: 100%;
+        border-radius: 3px;
+        background-color: $main-color;
+        color: $white;
+    }
+
+    .minus-btn {
+        width: 100%;
+        height: 45px;
+        border-radius: 3px;
+        background-color: $main-color;
+        color: $white;
+
+        @include media450Mixin {
+            height: 25px;
+        }
+    }
+
+    @include media550Mixin {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.formPage__size-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    & input {
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 5px;
+        resize: none;
+
+        &::placeholder {
+            text-align: center;
+        }
+
+        @include media450Mixin {
+            font-size: 14px;
+        }
+    }
+
+    & button {
+        width: 100%;
+    }
+
+    .formPage__size-inps {
+        display: flex;
+        column-gap: 5px;
+    }
+}
+
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("./../../../public/images/lll.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form__wrapper {
+    width: clamp(300px, 90vw, 420px);
+    padding: 30px 40px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    color: black;
+
+    @include media450Mixin {
+        padding: 20px 30px;
+    }
+
+    & h1 {
+        font-size: 36px;
+        font-weight: 600;
+        text-align: center;
+
+        @include media450Mixin {
+            font-size: 28px;
+        }
+    }
+
+    .input-box {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        margin: 30px 0;
+        color: $white;
+
+        & input {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            outline: none;
+            border: 2px solid rgba(255, 255, 255, .2);
+            border-radius: 40px;
+            font-size: 16px;
+            color: $white;
+            padding: 20px 45px 20px 20px;
+
+            &::placeholder {
+                color: $white;
+            }
+
+            
+
+            @include media450Mixin {
+                font-size: 14px;
+            }
+        }
+
+        & span {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            font-size: 18px;
+
+            @include media450Mixin {
+                top: 75%;
+            }
+        }
+
+        @include media450Mixin {
+            padding: 15px 0;
+            margin: 15px 0;
+        }
+    }
+
+    .forgot-box {
+        display: flex;
+        justify-content: end;
+        font-size: 14.5px;
+        margin: -10px 0 10px;
+
+        & label input {
+            accent-color: black;
+            margin-right: 3px;
+        }
+
+        & a {
+            color: black;
+            
+            &:hover {
+                text-decoration: underline;
+            }
+
+            @include media450Mixin {
+                font-size: 14px;
+            }
+        }
+
+        @include media450Mixin {
+            margin: 30px 0 10px;
+        }
+    }
+
+    .register-link {
+        font-size: 14.5px;
+        text-align: center;
+        margin: 20px 0 15px;
+    
+        & p a {
+            color: black;
+            font-weight: 600;
+            
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+

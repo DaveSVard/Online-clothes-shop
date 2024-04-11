@@ -1,0 +1,43 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@reduxjs/toolkit": "^2.2.0",
+    "@stripe/stripe-js": "^3.3.0",
+    "@types/animejs": "^3.1.12",
+    "@types/js-cookie": "^3.0.6",
+    "@types/lodash": "^4.17.0",
+    "animejs": "^3.2.2",
+    "axios": "^1.6.8",
+    "bootstrap": "^5.3.3",
+    "formik": "^2.4.5",
+    "gsap": "^3.12.5",
+    "js-cookie": "^3.0.5",
+    "lodash": "^4.17.21",
+    "next": "latest",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^9.1.0",
+    "sass": "^1.72.0",
+    "scss": "^0.2.4",
+    "stripe": "^14.24.0",
+    "swiper": "^11.1.0",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.2.5",
+    "@types/react": "18.2.37",
+    "@types/react-dom": "^18.2.18",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.3.3"
+  }
+}

@@ -1,0 +1,88 @@
+@import "./vars.scss";
+
+.info {
+    margin-top: 50px;
+}
+
+.info__table {
+    width: clamp(280px, 50vw, 400px);
+    border: 1px solid black;
+    border-collapse: collapse;
+
+    & td {
+        padding: 5px;
+        border: 1px solid black;
+    }
+
+    & th {
+        padding: 5px;
+        border: 1px solid black;
+        background-color: $lite-mainColor;
+        color: $white;
+    }
+
+    .sm-td {
+        width: 35px;
+        text-align: center;
+        color: black;
+    }
+    
+}
+
+// product!!
+
+.info__product-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 10px;
+
+    @include media850Mixin {
+        flex-direction: column;   
+        align-items: center;
+    }
+}
+
+.info__product-filter {
+    width: 250px;
+
+    @include media850Mixin {
+        order: 1;
+    }
+}
+
+
+.info__product-table {
+    width: 80%;
+    border: 1px solid black;
+    border-collapse: collapse;
+
+    & td {
+        padding: 5px;
+        border: 1px solid black;
+    }
+
+    & th {
+        padding: 5px;
+        border: 1px solid black;
+        background-color: $lite-mainColor;
+        color: $white;
+    }
+
+    .sm-td {
+        width: 35px;
+        text-align: center;
+    }
+
+    @include media850Mixin {
+        width: 100%;
+    }
+
+    @include media550Mixin {
+        font-size: 15px;
+    }
+
+}
+

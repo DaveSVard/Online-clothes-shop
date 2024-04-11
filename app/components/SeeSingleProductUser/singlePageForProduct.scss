@@ -1,0 +1,81 @@
+@import "./../../styles/base/vars.scss";
+
+.singleProduct {
+    background-image: url("./../../../public/images/bbb.jpg");
+    width: 100%;
+    min-height: 100vh;
+}
+
+.singleProduct__wrapper {
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.singleProduct__content {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    column-gap: 25px;
+    row-gap: 15px;
+
+    .singleProduct__info {
+        width: 250px;
+        padding: 15px;
+        background-color: $main-color;
+
+        border-radius: 12px;
+        color: $white;
+
+        .info__product-size {
+            display: flex;
+            column-gap: 20px;
+        }
+
+        .singleProduct__info-icons {
+            margin-top: 10px;
+            display: flex;
+            column-gap: 10px;
+
+            font-size: 18px;
+        }
+    }
+
+    .singleProduct__images {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        align-content: center;
+        justify-items: center;
+        gap: 10px;
+
+        .singleProduct__images-item {
+            height: 225px;
+            overflow: hidden;
+    
+            & img {
+                width: 320px;
+                height: 100%;
+                border-radius: 7px;
+                transition: 0.3s;
+    
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        @include media1270Mixin {
+            width: 100%;
+        }
+
+    }
+
+    @include media1270Mixin {
+        flex-direction: column;
+        align-items: center;
+    }
+}

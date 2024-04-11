@@ -1,0 +1,171 @@
+@import "./../../styles/base/vars.scss";
+
+.productCard {
+    // position: relative;
+    // min-height: 300px;
+    // background-color: $main-color;
+    // border-radius: 10px;
+    // padding: 15px;
+    // transition: 0.3s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 25px;
+    background-color: $main-color;
+    border-radius: 10px;
+    padding: 15px;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: $lite-mainColor;
+        border-radius: 10px;
+    }
+}
+
+.productCard__top {
+    // width: 100%;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    // row-gap: 5px;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+
+    .productTitle {
+        font-size: 18px;
+        font-weight: 600;
+        color: $white;
+    }
+
+    .porductCard__img {
+        width: 250px;
+        height: 175px;
+        border-radius: 7px;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            border-radius: 7px;
+            transition: 0.3s ease-in;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        .mySwiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiperSlide {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+}
+
+.productCard__bottom {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $white;
+
+
+    .productPrice {
+        font-size: 15px;
+        font-weight: 400;
+        color: $white;
+    }
+
+    .productCard__icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 5px;
+        color: $white;
+    }
+}
+
+// chisht!!!!!!!!!!
+
+
+.productCard2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 25px;
+    background-color: $main-color;
+    border-radius: 10px;
+    padding: 15px;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: $lite-mainColor;
+        border-radius: 10px;
+    }
+}
+
+.productCard__top2 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+
+    .productTitle {
+        font-size: 18px;
+        font-weight: 600;
+        color: $white;
+    }
+}
+
+.productCard__bottom2 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    color: $white;
+
+}
+
+.porductCard__img2 {
+    width: 250px;
+        height: 175px;
+        border-radius: 10px;
+
+    & img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        transition: 0.3s ease-in;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .mySwiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiperSlide {
+        width: 100%;
+        height: 100%;
+    }
+}

@@ -1,0 +1,42 @@
+@import "./../../styles/base/vars.scss";
+
+.pagination {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-item {
+    padding: 10px 15px ;
+    border: 1px solid $white;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: aliceblue;
+    }
+
+    &:hover .page-link {
+        color: black;
+    }
+
+    @include media550Mixin {
+        padding: 5px 7px;
+    }
+}
+
+.first {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.last {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.page-link {
+    color: $white;
+    transition: 0.3s;
+}
